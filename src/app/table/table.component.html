@@ -1,0 +1,28 @@
+<!-- <p>{{data[0].name}}</p>
+<p>{{data[0].price}}</p>
+<p>{{data[0].expirationDate}}</p>
+<p>{{data[0].category}}</p> -->
+
+<!-- <ol>
+    <li *ngFor="let item of data">{{item.category}} {{item.name}} {{item.price}}грн {{item.expirationDate}}</li>
+</ol> -->
+
+<table border="1" cellspacing="4" cellpadding="4">
+    <caption>
+        Таблиця наявності алкогольних позицій
+    </caption>
+    <tr>
+        <th>Категорія</th>
+        <th>Назва</th>
+        <th>Кількість, шт.</th>
+        <th>Вартість, грн.</th>
+        <th>Термін придатності</th>
+    </tr>
+    <tr class="position" *ngFor="let item of data" align="center" style.background-color={{item.message}}>
+        <td>{{item.category}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.count}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.expirationDate}}</td>
+    </tr>
+</table>
