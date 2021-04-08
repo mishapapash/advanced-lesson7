@@ -58,7 +58,7 @@ let arrItem: Array<Item> = [
     name: 'Dalmore Trio',
     count: 10,
     price: 2000,
-    expirationDate: '13/04/2021',
+    expirationDate: '10/04/2021',
     category: 'Whiskey'
   },
   { 
