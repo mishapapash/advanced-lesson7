@@ -101,7 +101,7 @@ arrItem.forEach((value: Item, index: number) => {
   if(checking < 0) {
     value.message = 'red';
   }
-  else if(checking > 0 && checking <= 48) {
+  else if(checking > 0 && checking <= 2) {
     value.message = 'yellow';
   }
   else {
